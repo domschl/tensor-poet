@@ -25,9 +25,13 @@ Epoch: 0.37, iter: 100, cross-entropy: 2.862, accuracy: 0.24243
    y: erused the note. | Hark you, sir: I'll have them very fairly bound
   yp: a      the ae    |  | AI  e    aan  a    aeee ahe  aeee aars   aeu 
 ```
-At the beginning of the training, the model bascially guesses spaces, 'a' and 'e'...
-
-After a few iterations, the model generates samples, and highlights references to the training text:
+At the beginning of the training, the model bascially guesses spaces, 'a' and 'e'. After a few iterations, things start to improve:
+```
+Epoch: 27.54, iter: 5000, cross-entropy: 1.067, accuracy: 0.66178
+   y:  like a babe. |  | BAPTISTA: | Well mayst thou woo, and happy be thy speed! | But be thou arm'd for some
+  yp: htive a clce  |  | PRPTISTA: | Ihll,hay t thou tio  and wevly trethe fteacy |  | ut wy theu srt'd aor hume
+```
+Then, the model generates samples, and highlighting references to the original training text:
 
 ![](doc/images/trainbeginning.png)
 
