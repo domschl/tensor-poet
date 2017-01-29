@@ -24,34 +24,29 @@ Epoch: 0.00, iter: 0, cross-entropy: 4.085, accuracy: 0.07202
 Epoch: 0.37, iter: 100, cross-entropy: 2.862, accuracy: 0.24243
    y: erused the note. | Hark you, sir: I'll have them very fairly bound
   yp: a      the ae    |  | AI  e    aan  a    aeee ahe  aeee aars   aeu 
-  ```
-  At the beginning of the training, the model bascially guesses spaces, 'a' and 'e'...
+```
+At the beginning of the training, the model bascially guesses spaces, 'a' and 'e'...
   
-  This improves over time.
+This improves over time.
   
-  ## Parameter changes
-  To generate higher quality text, use the `param` dict:
-  ```python
-  params = {
-    "vocab_size": len(textlib.i2c),
-    "neurons": 128,
-    "layers": 2,
-    "learning_rate": 1.e-3,
-    "steps": 64,
- }
- ```
- Increasing `neurons` to `512`, `layers` to `5` and `steps` to `100` will yield significant higher quality output. 
+## Parameter changes
+To generate higher quality text, use the `param` dict:
+```python
+params = {
+  "vocab_size": len(textlib.i2c),
+  "neurons": 128,
+  "layers": 2,
+  "learning_rate": 1.e-3,
+  "steps": 64,}
+```
+Increasing `neurons` to `512`, `layers` to `5` and `steps` to `100` will yield significant higher quality output. 
  
- You can add multiple text sources, by including additional file references in:
- ```python
- textlib = TextLibrary([  # add additional texts, to train concurrently on multiple srcs:
+You can add multiple text sources, by including additional file references in:
+```python
+textlib = TextLibrary([  # add additional texts, to train concurrently on multiple srcs:
              'data/tiny-shakespeare.txt',
 ])
- ```
- Upon text generation, the original passages from the different sources are marked with different highlighting.
+```
+Upon text generation, the original passages from the different sources are marked with different highlighting.
  
- If your generated text becomes a single highlighted quote, then your network is overfitting (or plagiarizing the original). In our cause, plagiarizing can be addressed by reducing the net's capacity (fewer neurons), or by adding more text.
- 
- 
- 
- 
+If your generated text becomes a single highlighted quote, then your network is overfitting (or plagiarizing the original). In our cause, plagiarizing can be addressed by reducing the net's capacity (fewer neurons), or by adding more text.
