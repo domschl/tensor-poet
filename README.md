@@ -2,7 +2,7 @@
 This is a tensorflow-1.0 implemention along the ideas of Andrej Karpathy's [char-rnn](https://github.com/karpathy/char-rnn) as described in '[The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)'.
 
 ## Implementation
-* Based on the efficient implementation of LSTMs in Tensorflow 1.0 (using Python 3)
+* Based on the efficient implementation of LSTMs in Tensorflow 1.0
 * A single model is used for training and text-generation, since dynamic_rnns became flexible enough for this
 * Tensorflow 1.0 has nice performance improvements for deeply nested LSTMs both on CPU and GPU (the code runs completely on GPU, if on is available). Even a laptop without GPU starts generating discernable text within a few minutes.
 * Deeply nested LSTMs (e.g. 10 layers) are supported.
