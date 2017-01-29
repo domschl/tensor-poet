@@ -2,7 +2,7 @@
 This is a tensorflow-1.0 implemention along the ideas of Andrej Karpathy's [char-rnn](https://github.com/karpathy/char-rnn) as described in '[The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)'.
 
 ## Implementation
-* Based on the efficient implementation of LSTMs in Tensorflow 1.0 (using Python 3)
+* Based on the efficient implementation of LSTMs in Tensorflow 1.0
 * A single model is used for training and text-generation, since dynamic_rnns became flexible enough for this
 * Tensorflow 1.0 has nice performance improvements for deeply nested LSTMs both on CPU and GPU (the code runs completely on GPU, if on is available). Even a laptop without GPU starts generating discernable text within a few minutes.
 * Deeply nested LSTMs (e.g. 10 layers) are supported.
@@ -25,9 +25,13 @@ Epoch: 0.37, iter: 100, cross-entropy: 2.862, accuracy: 0.24243
    y: erused the note. | Hark you, sir: I'll have them very fairly bound
   yp: a      the ae    |  | AI  e    aan  a    aeee ahe  aeee aars   aeu 
 ```
-At the beginning of the training, the model bascially guesses spaces, 'a' and 'e'...
-
-After a few iterations, the model generates samples, and highlights references to the training text:
+At the beginning of the training, the model bascially guesses spaces, 'a' and 'e'. After a few iterations, things start to improve:
+```
+Epoch: 27.54, iter: 5000, cross-entropy: 1.067, accuracy: 0.66178
+   y:  like a babe. |  | BAPTISTA: | Well mayst thou woo, and happy be thy speed! | But be thou arm'd for some
+  yp: htive a clce  |  | PRPTISTA: | Ihll,hay t thou tio  and wevly trethe fteacy |  | ut wy theu srt'd aor hume
+```
+Then, the model generates samples, and highlighting references to the original training text:
 
 ![](doc/images/trainbeginning.png)
 
