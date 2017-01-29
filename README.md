@@ -26,7 +26,11 @@ Epoch: 0.37, iter: 100, cross-entropy: 2.862, accuracy: 0.24243
   yp: a      the ae    |  | AI  e    aan  a    aeee ahe  aeee aars   aeu 
 ```
 At the beginning of the training, the model bascially guesses spaces, 'a' and 'e'...
-  
+
+After a few iterations, the model generates samples, and highlights references to the training text:
+
+![](doc/images/trainbeginning.png)
+
 This improves over time.
   
 ## Parameter changes
