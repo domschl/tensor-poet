@@ -1,6 +1,14 @@
 # tensor-poet
 This is a tensorflow-1.0 implemention along the ideas of Andrej Karpathy's [char-rnn](https://github.com/karpathy/char-rnn) as described in '[The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)'.
 
+## Overview
+The model (8 layers of LSTMs with 256 neurons) was trained for 12h on four different texts: [_Pride and Prejudice_ by Jane Austen](http://www.gutenberg.org/ebooks/42671), [_Wuthering Heights_ by Emily Brontë](http://www.gutenberg.org/ebooks/768), [The _Voyage Out_ by Virginia Woolf](http://www.gutenberg.org/ebooks/144) and [_Emma_ by Jane Austen](http://www.gutenberg.org/ebooks/158)
+
+![](doc/images/training12h-1.png)
+
+![](doc/images/training12h-2.png)
+
+
 ## Implementation
 * Based on the efficient implementation of LSTMs in Tensorflow 1.0
 * A single model is used for training and text-generation, since dynamic_rnns became flexible enough for this
