@@ -12,6 +12,8 @@ Epoch: 277.09, iter: 134800, cross-entropy: 0.446, accuracy: 0.86361
 
 ![](doc/images/training12h-1.png)
 
+The highlighters show passages of minimum 20 characters that are verbatim copies from one of the source texts.
+
 ![](doc/images/training12h-2.png)
 
 ## Implementation
