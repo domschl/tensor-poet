@@ -4,6 +4,12 @@ This is a tensorflow-1.0 implemention along the ideas of Andrej Karpathy's [char
 ## Overview
 The model (8 layers of LSTMs with 256 neurons) was trained for 12h on four texts from [Project Gutenberg](http://www.gutenberg.org): [_Pride and Prejudice_ by Jane Austen](http://www.gutenberg.org/ebooks/42671), [_Wuthering Heights_ by Emily Brontë](http://www.gutenberg.org/ebooks/768), [The _Voyage Out_ by Virginia Woolf](http://www.gutenberg.org/ebooks/144) and [_Emma_ by Jane Austen](http://www.gutenberg.org/ebooks/158)
 
+Intermediate results after 12h of training on an NVIDIA GTX 980 Ti: 
+
+```
+Epoch: 277.09, iter: 134800, cross-entropy: 0.446, accuracy: 0.86361
+```
+
 ![](doc/images/training12h-1.png)
 
 ![](doc/images/training12h-2.png)
