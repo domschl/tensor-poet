@@ -2,19 +2,17 @@
 This is a tensorflow-1.0 implemention along the ideas of Andrej Karpathy's [char-rnn](https://github.com/karpathy/char-rnn) as described in '[The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)'.
 
 ## Overview
-The model (8 layers of LSTMs with 256 neurons) was trained for 12h on four texts from [Project Gutenberg](http://www.gutenberg.org): [_Pride and Prejudice_ by Jane Austen](http://www.gutenberg.org/ebooks/42671), [_Wuthering Heights_ by Emily Brontë](http://www.gutenberg.org/ebooks/768), [The _Voyage Out_ by Virginia Woolf](http://www.gutenberg.org/ebooks/144) and [_Emma_ by Jane Austen](http://www.gutenberg.org/ebooks/158)
+A sample model (8 layers of LSTMs with 256 neurons) was trained for 20h on four texts from [Project Gutenberg](http://www.gutenberg.org): [_Pride and Prejudice_ by Jane Austen](http://www.gutenberg.org/ebooks/42671), [_Wuthering Heights_ by Emily Brontë](http://www.gutenberg.org/ebooks/768), [The _Voyage Out_ by Virginia Woolf](http://www.gutenberg.org/ebooks/144) and [_Emma_ by Jane Austen](http://www.gutenberg.org/ebooks/158)
 
-Intermediate results after 12h of training on an NVIDIA GTX 980 Ti: 
+Intermediate results after 20h of training on an NVIDIA GTX 980 Ti: 
 
 ```
-Epoch: 277.09, iter: 134800, cross-entropy: 0.446, accuracy: 0.86361
+Epoch: 462.50, iter: 225000, cross-entropy: 0.378, accuracy: 0.88851
 ```
 
-![](doc/images/training12h-1.png)
+![](doc/images/training.png)
 
 The highlighters show passages of minimum 20 characters that are verbatim copies from one of the source texts.
-
-![](doc/images/training12h-2.png)
 
 ## Implementation
 * Based on the efficient implementation of LSTMs in Tensorflow 1.0
@@ -73,3 +71,8 @@ textlib = TextLibrary([  # add additional texts, to train concurrently on multip
 Upon text generation, the original passages from the different sources are marked with different highlighting.
  
 If your generated text becomes a single highlighted quote, then your network is overfitting (or plagiarizing the original). In our cause, plagiarizing can be addressed by reducing the net's capacity (fewer neurons), or by adding more text.
+
+## References
+* Andrej Karpathy's [char-rnn](https://github.com/karpathy/char-rnn)
+* [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
+* See [rnnreader](https://github.com/domschl/syncognite/tree/master/rnnreader) for a pure C++ implementation (no Tensorflow) of the same idea.
