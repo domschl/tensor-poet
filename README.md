@@ -71,3 +71,8 @@ textlib = TextLibrary([  # add additional texts, to train concurrently on multip
 Upon text generation, the original passages from the different sources are marked with different highlighting.
  
 If your generated text becomes a single highlighted quote, then your network is overfitting (or plagiarizing the original). In our cause, plagiarizing can be addressed by reducing the net's capacity (fewer neurons), or by adding more text.
+
+## References
+* Andrej Karpathy's [char-rnn](https://github.com/karpathy/char-rnn)
+* [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
+* See [rnnreader](https://github.com/domschl/syncognite/tree/master/rnnreader) for a pure C++ implementation (no Tensorflow) of the same idea.
