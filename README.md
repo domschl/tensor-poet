@@ -12,6 +12,7 @@ how similar the generated and original texts are.
 * Generates samples periodically, including source-markup.
 * Saves model training data periodically, allows restarts.
 * Tensorboard support
+* Support for dialog with the generative model
 
 ### Sample model
 A sample model (8 layers of LSTMs with 256 neurons) was trained for 20h on four texts from [Project Gutenberg](http://www.gutenberg.org): [_Pride and Prejudice_ by Jane Austen](http://www.gutenberg.org/ebooks/42671), [_Wuthering Heights_ by Emily Brontë](http://www.gutenberg.org/ebooks/768), [The _Voyage Out_ by Virginia Woolf](http://www.gutenberg.org/ebooks/144) and [_Emma_ by Jane Austen](http://www.gutenberg.org/ebooks/158)
