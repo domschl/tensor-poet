@@ -91,4 +91,5 @@ If your generated text becomes a single highlighted quote, then your network is 
 ## References
 * Andrej Karpathy's [char-rnn](https://github.com/karpathy/char-rnn)
 * [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
+* See [torch-poet](https://github.com/domschl/torch-poet) for a similar implementation using PyTorch.
 * See [rnnreader](https://github.com/domschl/syncognite/tree/master/rnnreader) for a pure C++ implementation (no Tensorflow) of the same idea.
