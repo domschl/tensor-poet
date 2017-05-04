@@ -1,4 +1,4 @@
-# tensor-poet
+# tensor-poet: a tensorflow char-rnn implementation
 This is a tensorflow-1.0 implemention along the ideas of Andrej Karpathy's [char-rnn](https://github.com/karpathy/char-rnn) as described in '[The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)'.
 
 ## Overview
