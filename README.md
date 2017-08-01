@@ -15,7 +15,7 @@ how similar the generated and original texts are.
 * Support for dialog with the generative model
 
 ### History
-* 2017-07-31: testet agains tensorflow 1.3rc1: worked, for the first time the tf api did not change.
+* 2017-07-31: testet against tensorflow 1.3rc1: worked, for the first time the tf api did not change.
 * 2017-05-19: adapted for tensorflow 1.2rc0: batch_size can't be given as tensor and used as scalar in tf-apis.
 * 2017-04-12: adapted for tensorflow 1.1 changes: definition of multi-layer LSTMs changed
 
