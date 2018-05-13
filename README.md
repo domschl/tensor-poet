@@ -19,6 +19,7 @@ how similar the generated and original texts are.
 
 ### History
 
+* 2018-05-13: Retested with tensorflow 1.8.
 * 2018-03-02: Adapted for tensorflow 1.6, upcoming change to tf.nn.softmax_cross_entropy_with_logits_v2
 * 2017-07-31: tested against tensorflow 1.3rc1: worked ok, for the first time the tf api did not change.
 * 2017-05-19: adapted for tensorflow 1.2rc0: batch_size can't be given as tensor and used as scalar in tf-apis.
