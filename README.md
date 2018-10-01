@@ -1,5 +1,10 @@
 # tensor-poet: a Tensorflow char-rnn implementation
 
+[![alt text][image]][hyperlink]
+
+  [hyperlink]: https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor-colab-poet.ipynb
+  [image]: https://img.shields.io/badge/Google%20Colab-Tensor%20Poet-yellow.svg (click to start colab)
+
 This is a tensorflow implemention along the ideas of Andrej Karpathy's [char-rnn](https://github.com/karpathy/char-rnn) as described in '[The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)'.
 
 ## Overview
@@ -19,6 +24,7 @@ how similar the generated and original texts are.
 
 ### History
 
+* 2018-10-01: Adapted for tensorflow 1.11, support for Google Colab.
 * 2018-05-13: Retested with tensorflow 1.8.
 * 2018-03-02: Adapted for tensorflow 1.6, upcoming change to tf.nn.softmax_cross_entropy_with_logits_v2
 * 2017-07-31: tested against tensorflow 1.3rc1: worked ok, for the first time the tf api did not change.
