@@ -2,7 +2,7 @@
 
 [![alt text][image]][hyperlink]
 
-  [hyperlink]: https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor-poet.ipynb
+  [hyperlink]: https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet.ipynb
   [image]: https://img.shields.io/badge/Google%20Colab-Tensor%20Poet-yellow.svg (click to start colab)
 
 This is a tensorflow implemention along the ideas of Andrej Karpathy's [char-rnn](https://github.com/karpathy/char-rnn) as described in '[The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)'.
@@ -18,7 +18,7 @@ how similar the generated and original texts are.
 
 * __Note:__ Select `Runtime / Change runtime type / GPU` in Google Colab:
 
-<a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor-poet.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run notebook in Google Colab</a>
+<a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run notebook in Google Colab</a>
 
 ### Some features
 
