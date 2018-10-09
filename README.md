@@ -16,9 +16,7 @@ how similar the generated and original texts are.
 
 ### Run notebook in Google Colab
 
-* __Note:__ Select `Runtime / Change runtime type / GPU` in Google Colab:
-
-<a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run notebook in Google Colab</a>
+<a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run notebook in Google Colab</a> on Tesla K80.
 
 ### Some features
 
