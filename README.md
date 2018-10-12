@@ -1,5 +1,6 @@
 # tensor-poet: a Tensorflow char-rnn implementation
 
+[![License](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](LICENSE)
 [![alt text][image]][hyperlink]
 
   [hyperlink]: https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet.ipynb
