@@ -29,6 +29,7 @@ how similar the generated and original texts are.
 
 ### History
 
+* 2019-05-16: Last tensorflow 1.x version, testet with 1.13.
 * 2018-10-01: Adapted for tensorflow 1.11, support for Google Colab.
 * 2018-05-13: Retested with tensorflow 1.8.
 * 2018-03-02: Adapted for tensorflow 1.6, upcoming change to tf.nn.softmax_cross_entropy_with_logits_v2
