@@ -1,13 +1,12 @@
 # tensor-poet: a Tensorflow char-rnn implementation
 
 [![License](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](LICENSE)
-[![alt text][image]][hyperlink]
+<!--
+[![alt text](image link)](web link)
+-->
+[![alt text](https://img.shields.io/badge/TF%201%20Google%20Colab-Tensor%20Poet-yellow.svg)](https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet.ipynb)
 
-[hyperlink]: https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet.ipynb
-[image]: https://img.shields.io/badge/TF%201%20Google%20Colab-Tensor%20Poet-yellow.svg (click to start TF 1 colab)
-
-[hyperlink]: https://colab.research.google.com/github/domschl/tensor-poet/blob/master/eager_poet.ipynb
-[image]: https://img.shields.io/badge/TF%202%20Google%20Colab-Eager%20Poet-yellow.svg (click to start TF 2 colab)
+[![alt text](https://img.shields.io/badge/TF%202%20Google%20Colab-Eager%20Poet-yellow.svg)](https://colab.research.google.com/github/domschl/tensor-poet/blob/master/eager_poet.ipynb)
 
 These are tensorflow implemention along the ideas of Andrej Karpathy's [char-rnn](https://github.com/karpathy/char-rnn) as described in '[The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)'.
 
