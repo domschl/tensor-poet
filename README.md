@@ -5,7 +5,6 @@
 [![alt text](image link)](web link)
 -->
 [![alt text](https://img.shields.io/badge/TF%201%20Google%20Colab-Tensor%20Poet-yellow.svg)](https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet.ipynb)
-
 [![alt text](https://img.shields.io/badge/TF%202%20Google%20Colab-Eager%20Poet-yellow.svg)](https://colab.research.google.com/github/domschl/tensor-poet/blob/master/eager_poet.ipynb)
 
 These are tensorflow implemention along the ideas of Andrej Karpathy's [char-rnn](https://github.com/karpathy/char-rnn) as described in '[The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)'.
