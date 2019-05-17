@@ -21,7 +21,7 @@ how similar the generated and original texts are.
 ### Run notebook in Google Colab
 
 * <a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run TF 1.x tensor_poet notebook in Google Colab</a> on GPU.
-* <a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/eager_poet.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run TF 2.x eager_poet notebook in Google Colab</a> on GPU <!--or TPU (unfinished!)-->>.
+* <a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/eager_poet.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run TF 2.x eager_poet notebook in Google Colab</a> on GPU <!--or TPU (unfinished!)-->.
 
 ### Some features
 
