@@ -19,12 +19,12 @@ how similar the generated and original texts are.
 ### Run notebook in Google Colab
 
 * <a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run TF 1.x tensor_poet notebook in Google Colab</a> on GPU.
-* <a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/eager_poet.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run TF 2.x eager_poet notebook in Google Colab</a> on GPU. <!--or TPU--> **(WIP, unfinished!)**
+* <a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/eager_poet.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run TF 2.x eager_poet notebook in Google Colab</a> on GPU and (not yet working) on TPU **(WIP, unfinished!)**
 
 ### Some features
 
 * `tensor_poet` uses the Tensorflow 1.x API with nexted LSTMs via [dynamic_rnn](https://www.tensorflow.org/versions/r1.1/api_docs/python/nn/recurrent_neural_networks).
-* `eager_poet` uses the Tensorflow 2 API (alpha at the time of this writing)
+* `eager_poet` uses the Tensorflow 2 API (beta at the time of this writing)
 * Generates samples periodically, including source-markup.
 * Saves model training data periodically, allows restarts.
 * Tensorboard support
@@ -32,6 +32,7 @@ how similar the generated and original texts are.
 
 ### History
 
+* 2019-06-15: TPU tests with Tensorflow 2 beta, allocation of TPUs works, training errors out with recursion error.
 * 2019-05-16: First (unfinished) test version for Tensorflow 2 alpha.
 * 2019-05-16: Last tensorflow 1.x version, testet with 1.13.
 * 2018-10-01: Adapted for tensorflow 1.11, support for Google Colab.
