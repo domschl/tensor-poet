@@ -2,3 +2,4 @@
 tensorlog/
 bk/
 training_checkpoints/
+logs/
