@@ -32,6 +32,7 @@ how similar the generated and original texts are.
 
 ### History
 
+* 2019-08-26: TPU/colab now at least initializes the TPU hardware, but Keras fit() still crashes.
 * 2019-06-15: TPU tests with Tensorflow 2 beta, allocation of TPUs works, training errors out with recursion error.
 * 2019-05-16: First (unfinished) test version for Tensorflow 2 alpha.
 * 2019-05-16: Last tensorflow 1.x version, testet with 1.13.
