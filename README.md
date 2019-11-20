@@ -32,6 +32,7 @@ how similar the generated and original texts are.
 
 ### History
 
+* 2019-11-20: TF 2.0 gpu nightly: No visible TPU in colab support progresses so far. keras.fit() still crashes, currently Tensorboard broken with nightly too.
 * 2019-08-26: TPU/colab now at least initializes the TPU hardware, but Keras fit() still crashes.
 * 2019-06-15: TPU tests with Tensorflow 2 beta, allocation of TPUs works, training errors out with recursion error.
 * 2019-05-16: First (unfinished) test version for Tensorflow 2 alpha.
