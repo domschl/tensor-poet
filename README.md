@@ -32,6 +32,8 @@ how similar the generated and original texts are.
 
 ### History
 
+* 2020-02-11: TF 2.1 colab now does things with TPU. The secret was to move the embeddings layer to cpu.
+Unfortunately, the result is just super-slow.
 * 2019-11-20: TF 2.0 gpu nightly: No visible TPU in colab support progresses so far. keras.fit() still crashes, currently Tensorboard broken with nightly too.
 TF 1 version: Make sure, tf 1.x is selected in colab.
 * 2019-08-26: TPU/colab now at least initializes the TPU hardware, but Keras fit() still crashes.
