@@ -3,3 +3,6 @@ tensorlog/
 bk/
 training_checkpoints/
 logs/
+*.json
+*.txt
+
