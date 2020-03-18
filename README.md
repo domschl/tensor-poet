@@ -21,17 +21,6 @@ how similar the generated and original texts are.
 * <a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run TF 1.x tensor_poet notebook in Google Colab</a> on GPU.
 * <a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/eager_poet.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run TF 2.x eager_poet notebook in Google Colab</a> on GPU and (not really useful) on TPU.
 
-#### A note on TPU support with Google Colab
-
-As of now (TF 2.1, Feb 2020) TPU support is not really useful for applications with recurrent layers. The sample suffers from the following shortcomings:
-
-* Embedding layers do not work with TPUs. They need to be run on CPU and the data is transferred back and forth. (Slow!)
-* LSTMs can not handle statefulness with TPUs. So on generation, the entire history must be regenerated. (Ultra slow)
-* TPUs don't support eager mode
-* Colab can't switch between eager (generation) and non-eager (training) mode
-
-That basically results in TPUs not being useful for NLP tasks with recurrent nets as of now.
-
 ### Some features
 
 * `tensor_poet` uses the Tensorflow 1.x API with nexted LSTMs via [dynamic_rnn](https://www.tensorflow.org/versions/r1.1/api_docs/python/nn/recurrent_neural_networks).
@@ -43,6 +32,7 @@ That basically results in TPUs not being useful for NLP tasks with recurrent net
 
 ### History
 
+* 2020-03-18: TPU training on colab now works.
 * 2020-02-11: TF 2.1 colab now does things with TPU. The secret was to move the embeddings layer to cpu.
 Unfortunately, the result is just super-slow.
 * 2019-11-20: TF 2.0 gpu nightly: No visible TPU in colab support progresses so far. keras.fit() still crashes, currently Tensorboard broken with nightly too.
