@@ -32,6 +32,7 @@ how similar the generated and original texts are.
 
 ### History
 
+* 2020-11-25: TF 2.3 fixes (api change) for TPU training. First experiments with tensorflow_macos arm64/x86_64 :(apple_poet.py, not functional).
 * 2020-03-18: TPU training on colab now works.
 * 2020-02-11: TF 2.1 colab now does things with TPU. The secret was to move the embeddings layer to cpu.
 Unfortunately, the result is just super-slow.
@@ -74,7 +75,7 @@ The highlighters show passages of minimum 20 characters that are verbatim copies
 
 ## Requirements
 
-* Tensorflow 1.x API
+* Tensorflow 
 * Python 3
 * Jupyter Notebook
 
