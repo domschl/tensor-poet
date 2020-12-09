@@ -4,8 +4,8 @@
 <!--
 [![alt text](image link)](web link)
 -->
-[![alt text](https://img.shields.io/badge/TF%201%20Google%20Colab-Tensor%20Poet-yellow.svg)](https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet.ipynb)
-[![alt text](https://img.shields.io/badge/TF%202%20Google%20Colab-Eager%20Poet-yellow.svg)](https://colab.research.google.com/github/domschl/tensor-poet/blob/master/eager_poet.ipynb)
+[![OLD Poet v1](https://img.shields.io/badge/TF%201%20Google%20Colab-Old%20tensor%20Poet%20tf%20v1-yellow.svg)](https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet_old_tf_v1.ipynb)
+[![Tensor Poet](https://img.shields.io/badge/TF%202%20Google%20Colab-Tensor%20Poet-yellow.svg)](https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet.ipynb)
 
 These are tensorflow implemention along the ideas of Andrej Karpathy's [char-rnn](https://github.com/karpathy/char-rnn) as described in '[The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)'.
 
@@ -18,13 +18,13 @@ how similar the generated and original texts are.
 
 ### Run notebook in Google Colab
 
-* <a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run TF 1.x tensor_poet notebook in Google Colab</a> on GPU.
-* <a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/eager_poet.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run TF 2.x eager_poet notebook in Google Colab</a> on GPU and (not really useful) on TPU.
+* <a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet_old_tf_v1.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run TF 1.x tensor_poet notebook in Google Colab</a> on GPU.
+* <a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run TF 2.x tensor_poet notebook in Google Colab</a> on GPU and (not really useful) on TPU, first test-code with Apple MLCompute.
 
 ### Some features
 
-* `tensor_poet` uses the Tensorflow 1.x API with nexted LSTMs via [dynamic_rnn](https://www.tensorflow.org/versions/r1.1/api_docs/python/nn/recurrent_neural_networks).
-* `eager_poet` uses the Tensorflow 2 API (beta at the time of this writing)
+* `tensor_poet_old_tf_v1` uses the Tensorflow 1.x API with nexted LSTMs via [dynamic_rnn](https://www.tensorflow.org/versions/r1.1/api_docs/python/nn/recurrent_neural_networks).
+* `tensor_poet` uses the Tensorflow 2 API
 * Generates samples periodically, including source-markup.
 * Saves model training data periodically, allows restarts.
 * Tensorboard support
@@ -32,6 +32,7 @@ how similar the generated and original texts are.
 
 ### History
 
+* 2020-12-09: Fix broken text data URL (Gutenberg), renamed old v1 `tensor_poet` to `tensor_poet_old_tf_v1`, and `eager_poet` to `tensor_poet`, since eager-mode isn't useful for TPUs and MLCompute.
 * 2020-11-25: TF 2.3 fixes (api change) for TPU training. First experiments with tensorflow_macos arm64/x86_64 :(apple_poet.py, not functional).
 * 2020-03-18: TPU training on colab now works.
 * 2020-02-11: TF 2.1 colab now does things with TPU. The secret was to move the embeddings layer to cpu.
@@ -65,9 +66,9 @@ The highlighters show passages of minimum 20 characters that are verbatim copies
 
 ## Implementation
 
-* Based on the efficient implementation of LSTMs in Tensorflow 1.x
+* Based on the efficient implementation of LSTMs in Tensorflow 2.x
 * A single model is used for training and text-generation, since dynamic_rnns became flexible enough for this
-* Tensorflow 1.x has nice performance improvements for deeply nested LSTMs both on CPU and GPU (the code runs completely on GPU, if on is available). Even a laptop without GPU starts generating discernable text within a few minutes.
+* Tensorflow 2.x has nice performance improvements for deeply nested LSTMs both on CPU and GPU (the code runs completely on GPU, if on is available). Even a laptop without GPU starts generating discernable text within a few minutes.
 * Deeply nested LSTMs (e.g. 10 layers) are supported.
 * Multiple source-text-files can be given for training. After text generation, color-highlighting is used to show, where the generated text is equal to some text within the source. Thus one can visualize, how free or how close the generated text follows the original training material.
 * Support for different temperatures during text generation
