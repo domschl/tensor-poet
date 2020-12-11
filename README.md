@@ -19,10 +19,11 @@ how similar the generated and original texts are.
 ### Run notebook in Google Colab
 
 * <a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet_old_tf_v1.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run TF 1.x tensor_poet notebook in Google Colab</a> on GPU.
-* <a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run TF 2.x tensor_poet notebook in Google Colab</a> on GPU, on TPU, and on Apple's neural engine via MLCompute.
+* <a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run TF 2.x tensor_poet notebook in Google Colab</a> on GPU, on TPU.
 
 ### Some features
 
+* Runs as local notebook on CPU, GPU or (with [tensorflow_macos](https://github.com/apple/tensorflow_macos)) on Apple's MLCompute.
 * `tensor_poet_old_tf_v1` uses the Tensorflow 1.x API with nexted LSTMs via [dynamic_rnn](https://www.tensorflow.org/versions/r1.1/api_docs/python/nn/recurrent_neural_networks).
 * `tensor_poet` uses the Tensorflow 2 API
 * Generates samples periodically, including source-markup.
