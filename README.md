@@ -19,7 +19,7 @@ how similar the generated and original texts are.
 ### Run notebook in Google Colab
 
 * <a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet_old_tf_v1.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run TF 1.x tensor_poet notebook in Google Colab</a> on GPU.
-* <a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run TF 2.x tensor_poet notebook in Google Colab</a> on GPU and (not really useful) on TPU, first test-code with Apple MLCompute.
+* <a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run TF 2.x tensor_poet notebook in Google Colab</a> on GPU, on TPU, and on Apple's neural engine via MLCompute.
 
 ### Some features
 
@@ -32,6 +32,7 @@ how similar the generated and original texts are.
 
 ### History
 
+* 2020-12-11: Apple M1 neural engine working with tensorflow_macos [0.1-alpha1](https://github.com/apple/tensorflow_macos)
 * 2020-12-09: Fix broken text data URL (Gutenberg), renamed old v1 `tensor_poet` to `tensor_poet_old_tf_v1`, and `eager_poet` to `tensor_poet`, since eager-mode isn't useful for TPUs and MLCompute.
 * 2020-11-25: TF 2.3 fixes (api change) for TPU training. First experiments with tensorflow_macos arm64/x86_64 :(apple_poet.py, not functional).
 * 2020-03-18: TPU training on colab now works.
@@ -76,7 +77,7 @@ The highlighters show passages of minimum 20 characters that are verbatim copies
 
 ## Requirements
 
-* Tensorflow 
+* Tensorflow (requires at least v0.1-alpha1 of tensorflow_macos for MLCompute on Apple M1)
 * Python 3
 * Jupyter Notebook
 
