@@ -33,6 +33,7 @@ how similar the generated and original texts are.
 
 ### History
 
+* 2021-06-09: Removed ml-compute specific code, apple M1 now usess tensorflow 2.5 pluggable device interface, which doesn't require custom code. Works only with TF 2.5 and higher, [Apple's Tensorflow Pluggin](https://developer.apple.com/metal/tensorflow-plugin/) needs to be installed for Apple platforms.
 * 2020-12-11: Apple M1 neural engine working with tensorflow_macos [0.1-alpha1](https://github.com/apple/tensorflow_macos)
 * 2020-12-09: Fix broken text data URL (Gutenberg), renamed old v1 `tensor_poet` to `tensor_poet_old_tf_v1`, and `eager_poet` to `tensor_poet`, since eager-mode isn't useful for TPUs and MLCompute.
 * 2020-11-25: TF 2.3 fixes (api change) for TPU training. First experiments with tensorflow_macos arm64/x86_64 :(apple_poet.py, not functional).
