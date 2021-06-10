@@ -28,6 +28,16 @@ how similar the generated and original texts are.
 * Tensorboard support
 * Support for dialog with the generative model
 
+### Performance (anecdotal evidence only!)
+
+***Note:*** This is *not* scientific benchmark data, just a single snapshot of tests with 4-layer LSTMs, about 7.5 parameters.
+
+Platform | time per iteration | relative performance
+-------- | ------------------ | --------------------
+NVidia 1080ti | 155ms         | 7x
+Google Colab Tesla T4 | 241ms | 4.5x
+Mac mini M1 | 1050ms          | 1x
+
 ### History
 
 * 2021-06-10: Removed Tensorflow v1 code.
