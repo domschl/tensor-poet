@@ -30,7 +30,7 @@ how similar the generated and original texts are.
 
 ### Performance (anecdotal evidence only!)
 
-***Note:*** This is *not* scientific benchmark data, just a single snapshot of tests with 4-layer LSTMs, about 7.5 parameters.
+***Note:*** This is *not* scientific benchmark data, just a single snapshot of tests with 4-layer LSTMs, about 7.5M parameters.
 
 Platform | time per iteration | relative performance
 -------- | ------------------ | --------------------
