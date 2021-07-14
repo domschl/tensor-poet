@@ -35,11 +35,13 @@ how similar the generated and original texts are.
 Platform | time per iteration | relative performance
 -------- | ------------------ | --------------------
 NVidia 1080ti | 155ms         | 7x
+Mac mini M1 (07/2021 tf version) | 204ms          | 5.1x
 Google Colab Tesla T4 | 241ms | 4.5x
-Mac mini M1 | 1050ms          | 1x
+Mac mini M1 (first tests) | 1050ms          | 1x
 
 ### History
 
+* 2021-07-14: Retested apple's m1 plugins with latest update: huge speed improvement.
 * 2021-06-10: Removed Tensorflow v1 code.
 * 2021-06-09: Removed ml-compute specific code, apple M1 now usess tensorflow 2.5 pluggable device interface, which doesn't require custom code. Works only with TF 2.5 and higher, [Apple's Tensorflow Plugin](https://developer.apple.com/metal/tensorflow-plugin/) needs to be installed for Apple platforms.
 * 2020-12-11: Apple M1 neural engine working with tensorflow_macos [0.1-alpha1](https://github.com/apple/tensorflow_macos)
