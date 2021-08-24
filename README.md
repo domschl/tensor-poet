@@ -40,6 +40,7 @@ Mac mini M1 (first tests) | 1050ms          | 1x
 
 ### History
 
+* 2021-08-21: Fixed links to Gutenberg, retests with Apple's latest plugins.
 * 2021-06-10: Removed Tensorflow v1 code.
 * 2021-06-09: Removed ml-compute specific code, apple M1 now usess tensorflow 2.5 pluggable device interface, which doesn't require custom code. Works only with TF 2.5 and higher, [Apple's Tensorflow Plugin](https://developer.apple.com/metal/tensorflow-plugin/) needs to be installed for Apple platforms.
 * 2020-12-11: Apple M1 neural engine working with tensorflow_macos [0.1-alpha1](https://github.com/apple/tensorflow_macos)
