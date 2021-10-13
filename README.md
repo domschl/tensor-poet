@@ -40,6 +40,8 @@ Mac mini M1 (first tests) | 1050ms          | 1x
 
 ### History
 
+* 2021-10-13: Retested with Tensorflow 2.6 and latest Apple plugins. While tensorflow_metal is fast, the current LSTM implementation seems broken,
+              training does not converge to meaningful results with Apple's HW/SW.
 * 2021-08-21: Fixed links to Gutenberg, retests with Apple's latest plugins.
 * 2021-06-10: Removed Tensorflow v1 code.
 * 2021-06-09: Removed ml-compute specific code, apple M1 now usess tensorflow 2.5 pluggable device interface, which doesn't require custom code. Works only with TF 2.5 and higher, [Apple's Tensorflow Plugin](https://developer.apple.com/metal/tensorflow-plugin/) needs to be installed for Apple platforms.
