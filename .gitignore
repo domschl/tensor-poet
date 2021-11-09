@@ -5,4 +5,5 @@ training_checkpoints/
 logs/
 *.json
 *.txt
-
+.DS_Store
+Women-Writers/
