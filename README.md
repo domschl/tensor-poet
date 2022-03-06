@@ -18,6 +18,9 @@ how similar the generated and original texts are.
 ### Run notebook in Google Colab
 
 * <a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run TF 2.x tensor_poet notebook in Google Colab</a> on GPU, on TPU.
+* Alternative <a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet_indie_tools.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run TF 2.x tensor_poet [with indie-tools] notebook in Google Colab</a> on GPU, on TPU. This version uses [ml_indie_tools](https://github.com/domschl/ml-indie-tools) reusable libraries for data-access.
+
+See also a newer version using transformers: [transformer-poet](https://github.com/domschl/transformer-poet)
 
 ### Some features
 
@@ -158,6 +161,8 @@ If your generated text becomes a single highlighted quote, then your network is 
 * [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
 * See [torch-poet](https://github.com/domschl/torch-poet) for a similar implementation using PyTorch.
 * See [rnnreader](https://github.com/domschl/syncognite/tree/master/rnnreader) for a pure C++ implementation (no Tensorflow) of the same idea.
+* Newer version using transformers: [transformer-poet](https://github.com/domschl/transformer-poet)
+* Helper libraries for Gutenberg-access and ML-hardware abstraction: [ml_indie_tools](https://github.com/domschl/ml-indie-tools)
 
 ### Tensorflow 2 sources
 
