@@ -42,6 +42,7 @@ the current LSTM implementation seems broken. Training does not converge correct
 
 ### History
 
+* 2022-04-06: Retested with Tensorflow 2.8 and latest Apple plugins. Apple's LSTM seems fixed now! (tensorflow_macos 2.8, tensorflow_metal 0.4)
 * 2021-10-13: Retested with Tensorflow 2.6 and latest Apple plugins. While tensorflow_metal is fast, the current LSTM implementation seems broken,
               training does not converge to meaningful results with Apple's HW/SW.
 * 2021-08-21: Fixed links to Gutenberg, retests with Apple's latest plugins.
