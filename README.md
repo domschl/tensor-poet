@@ -36,9 +36,10 @@ Platform | time per iteration | relative performance
 -------- | ------------------ | --------------------
 NVidia 1080ti | 155ms         | 7x
 Google Colab Tesla T4 | 241ms | 4.5x
+Mac mini M1 | 453ms | 2.4x
 
-M1 arm64 notes: while the tensorflow_macos and tensorflow_metal implementations are reasonably fast (currently about 4.5x slower than Nvidia 1080ti),
-the current LSTM implementation seems broken. Training does not converge correctly when using M1 hardware.
+M1 arm64 notes: requires at least Apple's tensorflow_macos >=2.8 and tensorflow_metal >= 0.4. Version earlier had
+a broken LSTM implementation. With M1 use the `ml_indie_tools` version.
 
 ### History
 
