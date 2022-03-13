@@ -18,7 +18,6 @@ how similar the generated and original texts are.
 ### Run notebook in Google Colab
 
 * <a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run TF 2.x tensor_poet notebook in Google Colab</a> on GPU, on TPU.
-* Alternative <a href="https://colab.research.google.com/github/domschl/tensor-poet/blob/master/tensor_poet_indie_tools.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" height="12" width="12" /> Run TF 2.x tensor_poet [with indie-tools] notebook in Google Colab</a> on GPU, on TPU. This version uses [ml_indie_tools](https://github.com/domschl/ml-indie-tools) reusable libraries for data-access.
 
 See also a newer version using transformers: [transformer-poet](https://github.com/domschl/transformer-poet)
 
@@ -42,7 +41,7 @@ Google Colab Tesla T4 | 241ms | 4.5x
 Mac mini M1 | 453ms | 2.4x
 
 M1 arm64 notes: requires at least Apple's tensorflow_macos >=2.8 and tensorflow_metal >= 0.4. Version earlier had
-a broken LSTM implementation. With M1 use the `ml_indie_tools` version.
+a broken LSTM implementation.
 
 ### History
 
@@ -101,26 +100,7 @@ The highlighters show passages of minimum 20 characters that are verbatim copies
 * Python 3
 * Jupyter Notebook
 
-## Output
-
-Shown are the training labels (y:) and the prediction by the model (yp:)
-
-```bash
-Epoch: 0.00, iter: 0, cross-entropy: 4.085, accuracy: 0.07202
-   y:  doing them neither | good nor harm: but he seeks their hate with
-  yp: zziiipppppppppppppppprrrrrpp               nn
-Epoch: 0.37, iter: 100, cross-entropy: 2.862, accuracy: 0.24243
-   y: erused the note. | Hark you, sir: I'll have them very fairly bound
-  yp: a      the ae    |  | AI  e    aan  a    aeee ahe  aeee aars   aeu
-```
-
-At the beginning of the training, the model bascially guesses spaces, 'a' and 'e'. After a few iterations, things start to improve:
-
-```bash
-Epoch: 27.54, iter: 5000, cross-entropy: 1.067, accuracy: 0.66178
-   y:  like a babe. |  | BAPTISTA: | Well mayst thou woo, and happy be thy speed! | But be thou arm'd for some
-  yp: htive a clce  |  | PRPTISTA: | Ihll,hay t thou tio  and wevly trethe fteacy |  | ut wy theu srt'd aor hume
-```
+## Samples
 
 Then, the model generates samples, and highlighting references to the original training text:
 
