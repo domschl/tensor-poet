@@ -1,3 +1,5 @@
+This project is now archived, due to the relentless API-changing-activities on tensorflow...
+
 # tensor-poet: a Tensorflow char-rnn implementation
 
 [![License](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](LICENSE)
